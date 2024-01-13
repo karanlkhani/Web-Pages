@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap');
+
+/* font-family: 'Cormorant Garamond', serif; */
+ 
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box; 
+}
+
+.banner{
+    width: 100%;
+    height: 90vh;
+    background-color: grey;
+    background-image: url("./images/banner.jpeg");
+    background-position: center;
+    background-size: cover;
+    display: flex; /*we did this because the cover was also going down with the header*/
+    flex-direction: column;
+}
+
+.header{
+    width: 100%;
+    height:70px;
+    /* background-color: red; */
+    padding: 0px 10%;/*top bottom 0 left right 15*/
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.logo{
+    width: 10%;
+    height: 70px;
+    /* background-color: yellow; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-text{
+    width: 80%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 700;
+}
+
+.nav{
+    width: 45%;
+    /* background-color: blue; */
+    height: 70px;
+}
+
+.nav-links{
+    width: 100%;
+    /* background-color: yellow; */
+    list-style-type: none;
+    display: flex;
+    height: 70px;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 700;
+}
+
+.nav-link{
+    padding: 5px 10px;
+    transition: .3s;
+    border-radius: 30px;
+}
+
+.nav-link:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+/* banner details css */
+
+.banner-details{
+    width: 100%;
+    /* background-color: white; */
+    padding: 20px 10%; /*we can still se the area without height beacuse we have padding gap*/ 
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 50px;
+}
+
+.badge{
+    width: max-content;
+    padding: 10px 20px;
+    background-color: lightgrey;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 20px;
+    border-radius: 10px;
+
+}
+
+.banner-heading{
+    font-size: 90px;
+    font-family: 'Cormorant Garamond', serif;
+    color: white;
+
+}
+
+.btn{
+    padding: 18px 30px;
+    font-size: 18px;
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+    cursor: pointer;
+    border-radius: 30px;
+
+}
+
+.booking{
+    width: 100%;
+    padding: 20px 10px;
+    background-color: rgba(255, 255, 255, .7);
+    display: flex;
+    column-gap: 20px;
+
+}
+
+.inp{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Cormorant Garamond', serif;
+    row-gap: 5px;
+    justify-content: flex-end;
+}
+
+input{
+    height: 40px;
+    text-indent: 10px;
+    font-size: 15px;
+}
+
+.book-btn{
+    padding: 10px 30px;
+}
+
+/* about css */
+
+.about{
+    width: 100%;
+    padding: 50px 10%;
+    background-color: white;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 30px;
+    font-weight: 200;
+    word-spacing: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 30px;
+}
+
+.highlight{
+    font-weight: 700;
+}
+
+.icon{
+    font-size: 40px;
+}
+
+/* rooms css */
+
+.rooms{
+    width: 100%;
+    padding: 50px 10%;
+    background-color: #f9f9f9;
+    font-family:  'Cormorant Garamond', serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-tittle{
+    font-size: 40px;
+}
+
+.rooms-area{
+    width: 100%;
+    padding: 20px 0px;
+    /* background-color: red; */
+    margin-top: 50px;
+    display: flex;
+    /* flex-wrap: wrap; */
+    column-gap: 5%;
+    row-gap: 50px;
+    cursor: pointer;
+}
+
+
+.room{
+    width: 30%;
+    
+    background-color: white;
+}
+
+.room-img{
+    height: 350px;
+    width: 100%;
+    /* background-color: pink; */
+    overflow: hidden;
+}
+
+.room-image{
+    width: 100%;
+    height: 350px;
+    transition: .3s;
+
+}
+
+.room-image:hover{
+    opacity: 0.7;
+}
+
+
+.room-details{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 10px;
+}
+
+/* subscribe css */
+
+.subscribe{
+    width: 100%;
+    padding: 50px 10%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.sub-text{
+    width: 30%;
+    padding: 20px;
+    /* background-color: skyblue; */
+    font-family: 'Cormorant Garamond', serif;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+
+}
+
+.logo2{
+    width: 50%;
+}
+
+.sub-desc{
+    font-size: 18px;
+}
+
+.sub-area{
+    width: 35%;
+    padding: 20px;
+    /* background-color: green; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family:  'Cormorant Garamond', serif;
+    row-gap: 10px;
+}
+
+.sub-inp{
+    height: 60px;
+    width: 100%;
+    border-radius: 30px;
+
+}
+
+.sub-form{
+    display: flex;
+    column-gap: 5px;
+}
+
+/* food section css */
+
+.food{
+    width: 100%;
+    height: 90vh;
+    background-color: red;
+    background-image: url(/images/food.avif);
+    background-size: cover;
+    padding: 50px 5%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background-repeat: no-repeat;
+}
+
+.food-detail{
+    width: 50%;
+    padding: 30px;
+    font-family:  'Cormorant Garamond', serif;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 30px;
+}
+
+.section-header{
+    font-size: 100px;
+}
